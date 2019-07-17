@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "alexDrozdov",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -27,7 +27,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./src/assets/vendor.css",
+              "./src/assets/theme.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true

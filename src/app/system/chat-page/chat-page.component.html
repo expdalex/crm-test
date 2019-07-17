@@ -1,0 +1,48 @@
+<div class="title-block">
+    <h3 class="title pull-left">
+        Чат сотрудников <span class="sparkline bar"></span>
+    </h3>
+    <div class="pull-right">
+      <button 
+        class="btn-sm btn btn-primary-outline"
+        (click)="onRefresh()"
+      >
+        <i class="fa fa-refresh"></i>
+      </button>
+    </div>
+</div>
+<section class="section">
+    <div class="row text-center" *ngIf="!isLoaded">
+      <wfm-loader></wfm-loader>
+    </div>
+    <div class="row" *ngIf="isLoaded">
+      <!-- <wfm-bill-card [bill]="bill" [currency]="currency" [message]="message" [messages]="messages" [date]="date"></wfm-bill-card> -->
+      <!-- <wfm-currency-card [bill]="bill" [currency]="currency"></wfm-currency-card> -->
+      <div class="col-md-12">
+        <!-- <div class="card stats" style="min-height: 500px;"> -->
+        <div class="card stats">
+          <div class="card stats" style="min-height: 250px; overflow-y: scroll; max-height: 450px;">
+          
+            <div class="card stats" *ngFor="let m of messages">{{m.date}}@{{m.user}}: {{m.content}} </div>
+         
+          </div>
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <input 
+              type="text" class="form-control col-md-10"
+              style="display: inline-block; width: 83.333%;" 
+              formControlName="content"
+              placeholder="Введите сообщение"
+            >
+            <button 
+              type="submit"
+              class="btn btn-primary col-md-2 col-xs-10" 
+              style="border-radius: 0.25rem;"
+      
+            >
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>

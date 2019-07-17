@@ -1,0 +1,117 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "name": "Администратор"
+    },
+    {
+      "email": "expdalex@gmail.com",
+      "password": "123456",
+      "name": "Alex",
+      "id": 2
+    }
+  ],
+  "messages": [
+    {
+      "date": "16.07.19 16:27:10",
+      "user": "Alex",
+      "content": "Hello",
+      "id": 1
+    },
+    {
+      "date": "16.07.19 16:27:14",
+      "user": "Alex",
+      "content": "World",
+      "id": 2
+    },
+    {
+      "date": "16.07.19 17:27:42",
+      "user": "Администратор",
+      "content": "Hi ALex",
+      "id": 3
+    },
+    {
+      "date": "16.07.19 17:29:44",
+      "user": "Администратор",
+      "content": "dasfdasf",
+      "id": 4
+    },
+    {
+      "date": "16.07.19 17:53:12",
+      "user": "Alex",
+      "content": "poji",
+      "id": 5
+    },
+    {
+      "date": "16.07.19 17:53:18",
+      "user": "Alex",
+      "content": "okju",
+      "id": 6
+    },
+    {
+      "date": "17.07.19 11:07:12",
+      "user": "Администратор",
+      "content": "hello world",
+      "id": 7
+    },
+    {
+      "date": "17.07.19 11:07:22",
+      "user": "Администратор",
+      "content": "sdfdsfds",
+      "id": 8
+    },
+    {
+      "date": "17.07.19 11:07:36",
+      "user": "Администратор",
+      "content": "rfr ltkf?",
+      "id": 9
+    },
+    {
+      "date": "17.07.19 11:07:43",
+      "user": "Администратор",
+      "content": "",
+      "id": 10
+    },
+    {
+      "date": "17.07.19 11:07:45",
+      "user": "Администратор",
+      "content": "",
+      "id": 11
+    },
+    {
+      "date": "17.07.19 11:07:52",
+      "user": "Администратор",
+      "content": "как дела?",
+      "id": 12
+    }
+  ],
+  "bill": {
+    "value": 97000,
+    "currency": "RUB"
+  },
+  "categories": [
+    {
+      "name": "Дом",
+      "capacity": 15000,
+      "id": 1
+    },
+    {
+      "name": "Еда",
+      "capacity": 10000,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Машина",
+      "capacity": 7000
+    },
+    {
+      "name": "Александр",
+      "capacity": 15000,
+      "id": 4
+    }
+  ],
+  "events": []
+}
